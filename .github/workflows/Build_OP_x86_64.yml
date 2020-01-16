@@ -57,7 +57,7 @@ jobs:
         sudo -E apt-get -y autoremove --purge
         sudo -E apt-get clean
         
-    - name: 自定义插件主题。
+    - name: zdy
       run: |
         cd package
         mkdir openwrt-packages
@@ -65,7 +65,6 @@ jobs:
         git clone https://github.com/openwrt-develop/luci-theme-atmaterial.git
         git clone https://github.com/Ameykyl/luci-app-koolproxyR
         git clone https://github.com/rosywrt/luci-theme-rosy
-        git clone https://github.com/Lienol/openwrt-package.git
 
     - name: Clone source code
       env: 
